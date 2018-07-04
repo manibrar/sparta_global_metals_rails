@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'metal/index'
+  get '/metal', to: "metal#index", as: "metal"
+  post '/metal', to: "metals#create", as: "metal_new"
   get 'metal/show'
   get 'metal/edit'
   get 'metal/destroy'
