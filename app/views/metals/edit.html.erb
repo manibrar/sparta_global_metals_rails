@@ -1,0 +1,23 @@
+<h1>Metal #edit</h1>
+
+
+  <h1 class="display-1 bg-info text-center">Mani's Metal Resources</h1>
+  <table>
+
+<div class="panel text-center">
+  <%@metals.each do |metal|%>
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top"  alt="<%=metal.title%>">
+  <div class="card-body">
+      <h5 class="card-title"><%=metal.title%></h5>
+      <p class="card-text"><%=metal.price%></p>
+      <p class="card-text"><%=metal.desc%></p>
+      <a class="btn btn-primary"><%= link_to 'Create New Metal', %></a>
+
+  </div>
+  <%= link_to 'Create New Metal', metals_new_path %>
+<%end%>
+</div>
+
+
+</div>
