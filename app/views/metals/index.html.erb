@@ -4,7 +4,7 @@
 <div class="d-inline text-center">
   <%@metals.each do |metal|%>
   <div class="card inline" style="width: 18rem;">
-  <img class="card-img-top" src="/assets/images/gold.jpg"  alt="<%=metal.title%>">
+  <%= image_tag("#{metal.title}.jpg", :alt => "#{metal.title}") %>
   <div class="card-body">
       <h5 class="card-title"><%=metal.title%></h5>
       <p class="card-text"><%=metal.price%></p>

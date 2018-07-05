@@ -2,9 +2,10 @@
 
 <div class="panel text-center">
   <div class="card text-center" style="width: 18rem;">
-  <img class="card-img-top"  alt="New Metal">
+  <%= image_tag("#{@metal.title}.jpg", :alt => "#{@metal.title}") %>
   <div class="card-body">
     <form class="" action="metals#create" method="post">
+
       <input type="text" name="title" placeholder="<%=@metal.title%>">
       <input type="text" name="price" placeholder="<%=@metal.price%>">
       <input type="text" name="desc" placeholder="<%=@metal.desc%>">
