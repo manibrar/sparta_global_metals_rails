@@ -1,2 +1,20 @@
-<h1>Metal#show</h1>
-<p>Find me in app/views/metal/show.html.erb</p>
+
+<h2 class="jumbotron text-center">#New Page</h2>
+
+
+<div class="panel text-center">
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top"  alt="New Metal">
+  <div class="card-body">
+    <form class="" action="metals#create" method="post">
+      <input type="text" name="title" placeholder="metal title">
+      <input type="float" name="price" placeholder="metal price">
+      <input type="text" name="desc" placeholder="metal desc">
+      <button type="submit" name="button" value="put">Click to submit</button>
+    </form>
+  </div>
+  <%= link_to 'Click to see all', metals_path %>
+</div>
+
+
+</div>

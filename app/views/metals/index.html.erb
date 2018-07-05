@@ -1,16 +1,15 @@
 
-  <h1 class="display-1 bg-info text-center">Mani's Metal Resources</h1>
-  <table>
+<h2 class="jumbotron text-center">#Index Page</h2>
 
-<div class="panel text-center">
+<div class="d-inline text-center">
   <%@metals.each do |metal|%>
-  <div class="card" style="width: 18rem;">
-  <img class="card-img-top"  alt="<%=metal.title%>">
+  <div class="card inline" style="width: 18rem;">
+  <img class="card-img-top" src="/assets/images/gold.jpg"  alt="<%=metal.title%>">
   <div class="card-body">
       <h5 class="card-title"><%=metal.title%></h5>
       <p class="card-text"><%=metal.price%></p>
       <p class="card-text"><%=metal.desc%></p>
-      
+      <%= link_to 'Edit Metal', metals_show_path(metal) %>
 
   </div>
   <%= link_to 'Create New Metal', metals_new_path %>
